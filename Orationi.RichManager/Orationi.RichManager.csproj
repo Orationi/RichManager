@@ -131,6 +131,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Orationi.RichManager.Slaves\Orationi.RichManager.Slaves.csproj">
+      <Project>{81E70855-5232-4E18-9FDF-4D294F3F8F09}</Project>
+      <Name>Orationi.RichManager.Slaves</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -1,9 +1,9 @@
-﻿using System;
-using Prism.Unity;
-using System.Windows;
+﻿using System.Windows;
 using Microsoft.Practices.Unity;
-using Prism.Modularity;
+using Orationi.RichManager.Slaves;
 using Orationi.RichManager.Views;
+using Prism.Modularity;
+using Prism.Unity;
 
 namespace Orationi.RichManager
 {
@@ -21,7 +21,8 @@ namespace Orationi.RichManager
 
 		protected override void ConfigureModuleCatalog()
 		{
-			throw new NotImplementedException();
+			ModuleCatalog catalog = (ModuleCatalog)ModuleCatalog;
+			catalog.AddModule(typeof(SlaveViewModule));
 		}
 	}
 }
