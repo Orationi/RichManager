@@ -1,1 +1,1 @@
-# RichMaster
+# RichManager
