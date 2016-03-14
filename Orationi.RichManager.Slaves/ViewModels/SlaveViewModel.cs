@@ -58,6 +58,11 @@ namespace Orationi.RichManager.Slaves.ViewModels
 
 		private readonly OrationiSlaveItem _slaveItem;
 
+		public SlaveViewModel()
+		{
+
+		}
+
 		public SlaveViewModel(OrationiSlaveItem slaveItem)
 		{
 			_slaveItem = slaveItem;

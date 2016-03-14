@@ -12,6 +12,11 @@ namespace Orationi.RichManager.Slaves.ViewModels
 		/// </summary>
 		public ObservableCollection<SlaveViewModel> Slaves { get; set; }
 
+		public SlavesViewModel()
+		{
+
+		}
+
 		public SlavesViewModel(IEnumerable<OrationiSlaveItem> slaves)
 		{
 			Slaves = new ObservableCollection<SlaveViewModel>();
