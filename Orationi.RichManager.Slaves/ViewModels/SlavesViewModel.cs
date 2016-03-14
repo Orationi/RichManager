@@ -1,15 +1,36 @@
-﻿using Prism.Mvvm;
+﻿using System;
+using Prism.Mvvm;
 
 namespace Orationi.RichManager.Slaves.ViewModels
 {
+	/// <summary>
+	/// Slave item view model.
+	/// </summary>
 	public class SlavesViewModel : BindableBase
 	{
-		private string _title = "Slaves";
+		/// <summary>
+		/// Identifier of Slave.
+		/// </summary>
+		public Guid Id { get; set; }
 
-		public string Title
-		{
-			get { return _title; }
-			set { SetProperty(ref _title, value); }
-		}
+		/// <summary>
+		/// Slave name.
+		/// </summary>
+		public string Name { get; set; }
+
+		/// <summary>
+		/// Slave description.
+		/// </summary>
+		public string Description { get; set; }
+
+		/// <summary>
+		/// Ip address of slave.
+		/// </summary>
+		public string Address { get; set; }
+
+		/// <summary>
+		/// Date and Time of last slave activity.
+		/// </summary>
+		public DateTime? LastActivity { get; set; }
 	}
 }
